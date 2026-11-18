@@ -6,6 +6,7 @@ import {
   Search,
   PenTool,
   ShieldCheck,
+  ShieldAlert,
   Terminal,
   Settings,
   PlusCircle,
@@ -46,6 +47,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: "research", label: "Research", icon: Search, badge: "Researcher" },
     { id: "content", label: "Generated Content", icon: PenTool, badge: "Writer" },
     { id: "reviewer", label: "Reviewer Report", icon: ShieldCheck, badge: "Reviewer" },
+    { id: "stress-testing", label: "Agent Stress Testing", icon: ShieldAlert, badge: "QA / Sec" },
     { id: "logs", label: "Tool Execution Logs", icon: Terminal, badge: "Audit" },
     { id: "settings", label: "Settings & API Keys", icon: Settings, badge: null },
   ];

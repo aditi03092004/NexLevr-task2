@@ -28,6 +28,7 @@ import { StrategyTab } from "@/components/dashboard/StrategyTab";
 import { ResearchTab } from "@/components/dashboard/ResearchTab";
 import { ContentTab } from "@/components/dashboard/ContentTab";
 import { ReviewerTab } from "@/components/dashboard/ReviewerTab";
+import { StressTestingDashboard } from "@/components/stressTesting/StressTestingDashboard";
 import { LogsTab } from "@/components/dashboard/LogsTab";
 import { SettingsTab } from "@/components/dashboard/SettingsTab";
 
@@ -651,6 +652,10 @@ export default function Home() {
               onRegenerateAfterReview={handleRegenerateAfterReview}
               isGenerating={isGenerating}
             />
+          )}
+
+          {activeTab === "stress-testing" && (
+            <StressTestingDashboard />
           )}
 
           {activeTab === "logs" && (
